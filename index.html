@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Przeliczanie temperatury</title>
+</head>
+<body>
+    <h2>Przelicz temperature</h2>
+    <p>Wprowadź temperaturę i jej jednostkę</p>
+    <input type="number" placeholder="0" id="input_value">
+    <select id="select_value">
+        <option value="k">(K) Kelwin</option>
+        <option value="c" selected>(°C) Celsjusza</option>
+        <option value="f">(°F) Farentheita</option>
+    </select>
+    <p>Wybierz jednostkę, jaką chcesz uzyskać i oblicz</p>
+    <select id="select_result">
+        <option value="k">(K) Kelwin</option>
+        <option value="c">(°C) Celsjusza</option>
+        <option value="f" selected>(°F) Farentheita</option>
+    </select>
+    <button id="execute">Oblicz</button>
+    <p>Wynik</p>
+    <input type="text" id="result" disabled value="0.0">
+    <script src="script.js"></script>
+</body>
+</html>
